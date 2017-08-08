@@ -1,0 +1,67 @@
+{% extends 'top/head.html.twig' %}
+{% block body %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/framework/css/products.css')  }}">
+
+    <div id="wrap">
+        <header>
+            <nav>
+                <a class="logo" href="/"></a>
+                <ul>
+                    <li class="btn"><a href="{{ url }}category?id=1">/ 野菜</a></li>
+                    <li class="btn"><a href="{{ url }}category?id=2">/ 果物</a></li>
+                    <li class="btn"><a href="{{ url }}category?id=3">/ 加工品</a></li>
+                    <li class="btn"><a href="{{ url }}">/ 滝沢について</a></li>
+                    <li class="btn"><a href="{{ url }}">/ ご利用ガイド /</a></li>
+                </ul>
+                <ul>
+                    <li><img src="{{ asset('bundles/framework/images/icon1.png')}}"></li>
+                    <li><img src="{{ asset('bundles/framework/images/icon2.png')}}"></li>
+                    <li><img src="{{ asset('bundles/framework/images/icon3.png')}}"></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="mainContainer">
+            <div id="banner">
+                <img src="{{ asset('bundles/framework/images/img4.jpg')}}" alt="" />
+            </div>
+
+            <form action="{{ url }}search" name="search" method="post">
+                <dl class="search">
+                    <dt><input type="text" name="search" value="" placeholder="Search" /></dt>
+                    <dd><button><img src="{{ asset('bundles/framework/images/icon3.png')}}"></button></dd>
+                </dl>
+            </form>
+
+            <div class="IndexBn">
+            {% for item in itemList %}
+                <a href="{{ url }}detail?id={{ item.id }}" target="_blank"><span class="cover" style="background-image: url({{ item.itemImgUrl }})">{{ item.itemName }}</span></a>
+
+            {% endfor %}
+            </div>
+            <div class="pnkz">
+                <p>＜　１　２　３　＞</p>
+            </div>
+
+        </div>
+        <footer>
+            <div class="footer">
+                <nav>
+                    <ul>
+                        &copy;takizawa2017. All rights reserved.
+                    </ul>
+                    <ul>
+                        <li class="btn"><a href="">/ ご利用ガイド</a></li>
+                        <li class="btn"><a href="">/ プライバシーポリシー</a></li>
+                        <li class="btn"><a href="">/ 運営会社</a></li>
+                        <li class="btn"><a href="">/ お問合せ</a></li>
+                        <li class="btn"><a href="">/ サイトマップ /</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </footer>
+    </div>
+{% endblock %}

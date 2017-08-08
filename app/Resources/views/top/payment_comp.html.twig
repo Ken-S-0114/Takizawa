@@ -1,0 +1,67 @@
+{% extends 'top/head.html.twig' %}
+{% block body %}
+    <style>
+        .button{
+            display: inline-block;
+            padding: 7px 20px;
+            border-radius: 13px;
+            text-decoration: none;
+            color: #FFF;
+            background-image: -webkit-linear-gradient(45deg, #89866C 0%, #89866C 100%);
+            background-image: linear-gradient(45deg, #89866C 0%, #89866C 100%);
+            transition: .4s;
+            border: none;
+            text-align: center;
+        }
+        .button:hover {
+            background-image: -webkit-linear-gradient(45deg, #89866C 0%, #89866C 100%);
+            background-image: linear-gradient(45deg, #89866C 0%, #89866C 100%);
+        }
+    </style>
+    <div id="wrap">
+        <header style="margin-top: -180px">
+            <nav>
+                <a class="logo" href="/"></a>
+                <ul>
+                    <li class="btn"><a href="{{ url }}category?id=1">/ 野菜</a></li>
+                    <li class="btn"><a href="{{ url }}category?id=2">/ 果物</a></li>
+                    <li class="btn"><a href="{{ url }}category?id=3">/ 加工品</a></li>
+                    <li class="btn"><a href="{{ url }}">/ 滝沢について</a></li>
+                    <li class="btn"><a href="{{ url }}">/ ご利用ガイド /</a></li>
+                </ul>
+                <ul>
+                    <li><img src="{{ asset('bundles/framework/images/icon1.png')}}"></li>
+                    <li><img src="{{ asset('bundles/framework/images/icon2.png')}}"></li>
+                    <li><img src="{{ asset('bundles/framework/images/icon3.png')}}"></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div style="margin-top: 200px">
+            <table width="620" border="0" align="center" cellpadding="3" cellspacing="2" style="text-align:center;">
+                <h1>決済完了ページ</h1>
+                <h1>決済が完了しました</h1>
+            </table>
+            <div style="text-align: center">
+                <a class="button" href="{{ url }}">トップページへもどる</a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <nav>
+                    <ul>
+                        &copy;takizawa2017. All rights reserved.
+                    </ul>
+                    <ul>
+                        <li class="btn"><a href="">/ ご利用ガイド</a></li>
+                        <li class="btn"><a href="">/ プライバシーポリシー</a></li>
+                        <li class="btn"><a href="">/ 運営会社</a></li>
+                        <li class="btn"><a href="">/ お問合せ</a></li>
+                        <li class="btn"><a href="">/ サイトマップ /</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+{% endblock %}

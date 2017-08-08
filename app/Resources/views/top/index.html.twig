@@ -1,0 +1,60 @@
+{% extends 'top/head.html.twig' %}
+{% block body %}
+        <div id="wrap">
+            <header>
+                <nav>
+                    <a class="logo" href="/"></a>
+                    <ul>
+                        <li class="btn"><a href="{{ url }}category?id=1">/ 野菜</a></li>
+                        <li class="btn"><a href="{{ url }}category?id=2">/ 果物</a></li>
+                        <li class="btn"><a href="{{ url }}category?id=3">/ 加工品</a></li>
+                        <li class="btn"><a href="{{ url }}">/ 滝沢について</a></li>
+                        <li class="btn"><a href="{{ url }}">/ ご利用ガイド /</a></li>
+                    </ul>
+                    <ul>
+                        <li><img src="{{ asset('bundles/framework/images/icon1.png')}}"></li>
+                        <li><img src="{{ asset('bundles/framework/images/icon2.png')}}"></li>
+                        <li><img src="{{ asset('bundles/framework/images/icon3.png')}}"></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <div class="kv">
+            <p id="slideshow">
+                <img src="{{ asset('bundles/framework/images/kv1.jpg') }}" width="100%" height="600" class="active">
+                <img src="{{ asset('bundles/framework/images/kv2.jpg') }}" width="100%" height="600">
+            </p>
+        </div>
+
+        <section id="works" class="content">
+            <h1>滝沢自慢の特産品</h1>
+            <div class="IndexBn">
+                <a href="{{ url }}category?id=1" target="_blank"><span class="cover" style="background-image: url({{ asset('bundles/framework/images/img1.jpg')}})"></span></a>
+                <a href="{{ url }}category?id=2" target="_blank"><span class="cover" style="background-image: url({{ asset('bundles/framework/images/img2.jpg')}})"></span></a>
+                <a href="{{ url }}category?id=3" target="_blank"><span class="cover" style="background-image: url({{ asset('bundles/framework/images/img3.jpg')}})"></span></a>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <nav>
+                    <ul>
+                        &copy;takizawa2017. All rights reserved.
+                    </ul>
+                    <ul>
+                        <li class="btn"><a href="">/ ご利用ガイド</a></li>
+                        <li class="btn"><a href="">/ プライバシーポリシー</a></li>
+                        <li class="btn"><a href="">/ 運営会社</a></li>
+                        <li class="btn"><a href="">/ お問合せ</a></li>
+                        <li class="btn"><a href="">/ サイトマップ /</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </footer>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LMembers
+ *
+ * @ORM\Table(name="l_members")
+ * @ORM\Entity
+ */
+class LMembers
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=512, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=512, nullable=true)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nickname", type="string", length=32, nullable=true)
+     */
+    private $nickname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="gender", type="string", length=32, nullable=true)
+     */
+    private $gender;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="birth_day", type="date", nullable=true)
+     */
+    private $birthDay;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="public_mail_flg", type="boolean", nullable=false)
+     */
+    private $publicMailFlg = '1';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="private_mail_flg", type="boolean", nullable=false)
+     */
+    private $privateMailFlg = '1';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="withdrawal_flg", type="boolean", nullable=false)
+     */
+    private $withdrawalFlg = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="hapitas_id", type="integer", nullable=true)
+     */
+    private $hapitasId;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="register_date", type="datetime", nullable=false)
+     */
+    private $registerDate = 'CURRENT_TIMESTAMP';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="update_date", type="datetime", nullable=false)
+     */
+    private $updateDate = '0000-00-00 00:00:00';
+
+
+}
+

@@ -1,0 +1,75 @@
+{% extends 'top/head.html.twig' %}
+{% block body %}
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: solid 1px;
+            padding: 0.5em;
+        }
+        .button{
+            display: inline-block;
+            padding: 7px 20px;
+            border-radius: 13px;
+            text-decoration: none;
+            color: #FFF;
+            background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+            background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+            transition: .4s;
+            border: none;
+            text-align: center;
+        }
+        .button:hover {
+            background-image: -webkit-linear-gradient(45deg, #ffe29e 0%, #f76a35 100%);
+            background-image: linear-gradient(45deg, #ffe29e 0%, #ffbc1b 100%);
+        }
+    </style>
+    <div id="wrap">
+        <header style="margin-top: -80px;">
+            <nav>
+                <a class="logo" href="/"></a>
+                <ul>
+                    <li class="btn"><a href="{{ url }}category?id=1">/ 野菜</a></li>
+                    <li class="btn"><a href="{{ url }}category?id=2">/ 果物</a></li>
+                    <li class="btn"><a href="{{ url }}category?id=3">/ 加工品</a></li>
+                    <li class="btn"><a href="{{ url }}">/ 滝沢について</a></li>
+                    <li class="btn"><a href="{{ url }}">/ ご利用ガイド /</a></li>
+                </ul>
+                <ul>
+                    <li><img src="{{ asset('bundles/framework/images/icon1.png')}}"></li>
+                    <li><img src="{{ asset('bundles/framework/images/icon2.png')}}"></li>
+                    <li><img src="{{ asset('bundles/framework/images/icon3.png')}}"></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="ntmargin"style="margin-top: 100px"></div>
+
+        <table width="620" border="0" align="center" cellpadding="3" cellspacing="2" style="text-align:center;">
+            <caption style="margin-top: 50px; text-align: center; font-size: 2em;margin-bottom: 10px">クレジットカードでのお支払い</caption>
+            <tr>
+                <td>お支払い金額</td>
+
+                <td><output name="cost"></output></td>
+            </tr>
+            <tr>
+                <td>ご利用いただけるカードブランド</td>
+                <td><img src="https://www.ana.co.jp/cont-image/common/logo/0058-lang-multi.jpg" width=300px></td>
+            </tr>
+            <tr>
+                <td>クレジットカード番号</td>
+                <td><input type="number" name="cardnumber">（ハイフンなし）</td>
+            </tr><tr>
+            <td>有効期限</td>
+            <td><input type="month" name="date"></td>
+            </tr>
+            <tr>
+                <td>セキュリティコード</td>
+                <td><input type="number" name="code"></td>
+             </tr>
+        </table>
+        <div class="center" style="text-align: center; margin-top: 30px;">
+            <a href="{{ url }}payment/complete" class="button">注文を確定する</a></br>
+        </div>
+    </div>
+{% endblock %}

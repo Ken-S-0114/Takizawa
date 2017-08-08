@@ -1,0 +1,12 @@
+{% block body %}
+
+    <h2>商品検索結果ページ</h2>
+    {% for item in itemList %}
+        {{ item.id }}
+        {{ item.itemName }}
+        {{ item.price }}
+        {{ item.context }}
+        {{ item.itemImgUrl }}
+    {% endfor %}
+
+{% endblock %}

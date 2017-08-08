@@ -1,0 +1,95 @@
+{% block form %}
+
+    <div id="container">
+
+        <div id="main">
+
+            <section>
+                <div Align="right"> チーム5sさん　ログイン中<br>
+                    <input type="submit" value="ログアウト"></div>
+                <h1>商品一覧</h1>
+                <table class="ta1">
+
+                    <form action="http://c**.future-shop.jp/fs/店舗KEY/ToCart.html" method="post">
+                        <table width="620" border="0" align="center" cellpadding="3" cellspacing="2" style="text-align:center;">
+                            <tr>
+                                <td><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=569x10000:format=jpg/path/s1de3d5920435a177/image/ic33b4449a668412a/version/1493373962/image.jpg", width="300" height="200" /></td>
+                                <td><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=569x10000:format=jpg/path/s1de3d5920435a177/image/id5a8a79215199a78/version/1484894142/image.jpg", width="300" height="200" /></td>
+                                <td><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=569x10000:format=jpg/path/s1de3d5920435a177/image/i96baa1562ca9d898/version/1484894328/image.jpg", width="300" height="200" /></td>
+                                <td><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=569x10000:format=jpg/path/s1de3d5920435a177/image/ib5e7afb7852c69ca/version/1484894427/image.jpg", width="300" height="200" /></td>
+                            </tr>
+                            <tr>
+                                <td>2525円</td>
+                                <td>2525円</td>
+                                <td>2525円</td>
+                                <td>2525円</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:18px; font-weight:bold" width="25%">春野菜</td>
+                                <td style="font-size:18px; font-weight:bold" width="25%">夏野菜</td>
+                                <td style="font-size:18px; font-weight:bold" width="25%">秋野菜</td>
+                                <td style="font-size:18px; font-weight:bold" width="25%">冬野菜</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="goodsNo" value="商品番号" />
+                                    数量
+                                    <input name="cnt_商品番号" type="text" value="" size="5" />
+                                </td>
+                                <td>
+                                    <input type="hidden" name="goodsNo" value="商品番号" />
+                                    数量
+                                    <input name="cnt_商品番号" type="text" value="" size="5" />
+                                </td>
+                                <td>
+                                    <input type="hidden" name="goodsNo" value="商品番号" />
+                                    数量
+                                    <input name="cnt_商品番号" type="text" value="" size="5" />
+                                </td>
+                                <td>
+                                    <input type="hidden" name="goodsNo" value="商品番号" />
+                                    数量
+                                    <input name="cnt_商品番号" type="text" value="" size="5" />
+                                </td>
+                            </tr>
+                        </TABLE>
+                        <div style="margin-top:20px;" align="center">
+                            <input name="submit" type="image" src="カートへの画像URL" value="カートへ" />
+                        </div>
+                    </form>
+                    </table>
+            </section>
+
+        </div>
+        <!--/main-->
+
+        <div id="sub">
+
+
+
+            <p id="pagetop"><a href="#">↑ PAGE TOP</a></p>
+
+            <footer>
+                <small>Copyright&copy; <a href="index.html">岩手県立大学健康サポートセンター</a> All Rights Reserved.</small>
+                <span class="pr">《IPU HEALTH SUPPORT CENTER》</span>
+            </footer>
+
+        </div>
+        <!--/container-->
+
+        <!--画面左上の装飾画像-->
+        <img src="images/bg1.png" id="kazari">
+
+        <!--lightbox用jsファイル読み込み-->
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+
+        <!--メニューの３本バー-->
+        <div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+        <!--メニューの開閉処理条件設定　800px以下-->
+        <script type="text/javascript">
+            if (OCwindowWidth() <= 800) {
+                open_close("menubar_hdr", "menubar-s");
+            }
+        </script>
+
+{% endblock %}

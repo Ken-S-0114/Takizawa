@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+	height: 100%;
+}
+body {
+	margin-top: -16px;
+	height: 100%;
+}
+#wrap{
+	width: 100%;
+	position: relative;
+	height:auto !important; /*IE6対策*/
+	height: 100%; /*IE6対策*/
+	min-height: 100%;
+}
+/*固定ナビゲーション*/
+header{
+	width: 100%;
+	height: 80px;
+	margin-left: -8px;
+	margin-right: -10px;
+	margin-top: 13px;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 999;
+}
+nav {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header ul {
+	float: left;
+	margin-top: 30px;
+	list-style: none;
+
+}
+header ul img {
+	width: 25px;
+}
+header ul li {
+	display: inline;
+	margin-left: 30px;
+}
+header ul li a{
+	list-style: none;
+	font-size: 16px;
+	font-family:Verdana, Geneva, "sans-serif";
+	color: #89866C;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+
+}
+a:hover{
+	color: #E0DCC0;
+}
+/*ここまで固定ナビゲーション*/
+.pnkz {
+	/*	text-align: ;*/
+	margin-bottom: -40px;
+	margin-top: -18px;
+	padding-left: 40px;
+	background-color: #EAEBDD;
+}
+
+.pnkz p {
+	color: #89866C;
+	text-decoration: none;
+}
+
+/*見出し*/
+h1 {
+	width: 300px;
+	text-align: center;
+	border-bottom: #BFBDB0 1px solid;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 18px;
+	letter-spacing: 1.4px;
+	font-size: 22px;
+	color: #89866C;
+}
+
+/*小見出し*/
+h2 {
+	text-align: center;
+	margin-top: 35px;
+	color: #89866C;
+	font-family: "メイリオ";
+	letter-spacing: 1.4px;
+}
+
+/*全体の文章の文字*/
+p {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-size: 17px;
+	/*	margin-top: px;*/
+}
+
+.MainP p {
+	text-align: center;
+}
+
+/*各セクションごとの指定*/
+
+/*ここの値は画像が空欄になっているところです。差し替えた画像に合わせて編集できます*/
+.photo {
+	width: 370px;
+	height: 180px;
+	float: right;
+	margin-top: 16px;
+	margin-right: 7%;
+	background-color:#CECECE;
+}
+
+/*h３はcoming　soonにしか使われてません*/
+h3 {
+	text-align: center;
+	margin-top: 80px;
+}
+
+
+
+.IndexBn {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+.cover {
+	display: inline-block;
+	border: 1px #E6E6E6 solid;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 18px;
+	width: 450px;
+	height: 320px;
+	background-size: cover;
+}
+
+
+#banner img{
+	width: 100%;
+	margin-top: 30px;
+}
+
+#searchBarContainer {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+dl.search{
+	position:relative;
+	background-color:#fff;
+	border:1px solid #aaa;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	-o-border-radius:6px;
+	-ms-border-radius:6px;
+	border-radius:6px;
+	margin: 40px 500px;
+}
+dl.search dt{
+	margin-right:40px;
+	padding:8px 0 8px 8px;
+}
+dl.search dt input{
+	width:400px;
+	height:24px;
+	line-height:24px;
+	background:none;
+	border:none;
+}
+dl.search dd{
+	position:absolute;
+	top:0;
+	right:0;
+}
+dl.search dd button{
+	display:block;
+	padding:10px;
+	background:none;
+	border:none;
+}
+dl.search dd button img{
+	display:block;
+	width:20px;
+	height:20px;
+	background:url('/images/.png') no-repeat scroll 0 0;
+}
+
+/*フッター*/
+footer {
+	width: 101.4%;
+	height:100px;
+	margin-left: -8px;
+	margin-right: -8px;
+	background-color: #ffffff;
+}
+
+.footer {
+	width: 250px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+	font-family:Verdana, Geneva, "sans-serif";
+	color: #89866C;
+	margin-left: 60px;
+	text-decoration: none;
+}
+
+footer ul {
+	float: right;
+	margin-top: 28px;
+	margin-bottom: 20px;
+	list-style: none;
+	color: #89866C;
+}
+footer ul li {
+	display: inline;
+	margin-left: 20px;
+}
+footer ul li a {
+	list-style: none;
+	font-size: 12px;
+	font-family:Verdana, Geneva, "sans-serif";
+	color: #89866C;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+
+}
+a:hover{
+	color: #E0DCC0;
+}
+
+#mainContainer {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	/*background-color: blue;*/
+}
+
+#contents {
+	width:  1100px;
+}
+
+#leftColumn {
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: -20px;
+}
+
+#rightColumn {
+	display: inline-block;
+	width: 500px;
+	margin-top: 30px;
+	margin-left: 90px;
+	vertical-align: top;
+}
+.price  {
+	text-align: right;
+	margin-top: 15px;
+	margin-bottom: 15px
+}
+#rightColumn p {
+	color: #89866C;
+}
+
+.maker {
+	display: inline-block;
+	margin-top: 0px;
+}
+
+#productProduction {
+	width: 1100px;
+	/*background-color: red;*/
+	/*	position: relative;*/
+	margin-top: 60px;
+}
+
+#orderForm {
+	width: 100%;
+	/*background-color: green;*/
+	position: relative;
+}
+
+#formItems {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80%;
+}
+
+
+#orderForm select {
+	width: 30px;
+	height: 40px;
+	padding: 10px;
+	-webkit-appearance:none;
+}
+
+
+#orderForm button{
+	width: 300px;
+	height: 40px;
+	color: #ffffff;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+#discriptionLabel{
+	margin: 0 auto;
+	padding-left: 20px;
+	/*	padding-top: 20px;*/
+	/*padding-bottom: 10px;*/
+
+}
+
+#discriptionText{
+	/*	padding: 20px;*/
+	/*	margin-left: 50px;*/
+	margin-right: 16px;
+	/*	margin-top: -14px;*/
+}
+#discriptionText p {
+	margin-top: 0px;
+	color: #89866C;
+}
+
+.button{
+	display: inline-block;
+	padding: 7px 20px;
+	border-radius: 13px;
+	text-decoration: none;
+	color: #FFF;
+	background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+	background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+	transition: .4s;
+	border: none;
+}
+
+.button:hover {
+	background-image: -webkit-linear-gradient(45deg, #ffe29e 0%, #f76a35 100%);
+	background-image: linear-gradient(45deg, #ffe29e 0%, #ffbc1b 100%);
+}

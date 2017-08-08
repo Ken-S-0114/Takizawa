@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+	height: 100%;
+}
+body {
+	margin-top: -16px;
+	height: 100%;
+}
+#wrap{
+	width: 100%;
+	position: relative;
+	height:auto !important; /*IE6対策*/
+	height: 100%; /*IE6対策*/
+	min-height: 100%;
+}
+/*固定ナビゲーション*/
+header{
+	width: 100%;
+	height: 80px;
+	/*	vertical-align: top;*/
+	margin-left: -8px;
+	margin-right: -10px;
+	margin-top: -35px;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 999;
+}
+nav {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header ul {
+	float: left;
+	margin-top: 28px;
+	list-style: none;
+
+}
+header ul img {
+	width: 25px;
+}
+header ul li {
+	display: inline;
+	margin-left: 30px;
+}
+header ul li a{
+	list-style: none;
+	font-size: 16px;
+	font-family:Verdana, Geneva, "sans-serif";
+	color: #89866C;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+
+}
+a:hover{
+	color: #E0DCC0;
+}
+.logo {
+	float: left;
+	width: 220px;
+	height: 65px;
+	margin-left: 3px;
+	margin-top: 10px;
+	background-image: url(../images/takizawa_logo.png) ;
+	background-repeat: no-repeat;
+	background-size: 220px 65px;
+}
+/*ここまで固定ナビゲーション*/
+
+
+/*キービジュアル*/
+.kv {
+	background-color:#1C3461;
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-top: 50px;
+	height: 600px;
+
+}
+#slideshow {
+	position: relative;
+	width: 100%; /* 画像の横幅に合わせて記述 */
+	height: 600px; /* 画像の高さに合わせて記述 */
+	margin-left: auto;
+	margin-right: auto;
+}
+#slideshow img {
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 8;
+	opacity: 0.0;
+}
+#slideshow img.active {
+	z-index: 10;
+	opacity: 1.0;
+}
+#slideshow img.last-active {
+	z-index: 9;
+}
+/*ここまでキービジュアル*/
+
+
+/*見出し*/
+h1 {
+	width: 300px;
+	text-align: center;
+	border-bottom: #BFBDB0 1px solid;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 18px;
+	letter-spacing: 1.4px;
+	font-size: 22px;
+	color: #89866C;
+}
+
+/*小見出し*/
+h2 {
+	text-align: center;
+	margin-top: 35px;
+	color: #655f51;
+	font-family: "メイリオ";
+	letter-spacing: 1.4px;
+}
+
+/*全体の文章の文字*/
+p {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-size: 17px;
+	margin-top: 40px;
+}
+
+/*各セクションごとの指定*/
+
+/*ここの値は画像が空欄になっているところです。差し替えた画像に合わせて編集できます*/
+.photo {
+	width: 370px;
+	height: 180px;
+	float: right;
+	margin-top: 16px;
+	margin-right: 7%;
+	background-color:#CECECE;
+}
+
+/*h３はcoming　soonにしか使われてません*/
+h3 {
+	text-align: center;
+	margin-top: 80px;
+}
+
+
+#works {
+	height: 450px;
+	background-color:#EAEBDD;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+/*実績が増えたらここの画像にリンクを貼り、中ページが見られるようにします。サムネ画像が決まったらw300×h180に合わせます*/
+
+
+.IndexBn {
+	width: 1150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 65px;
+}
+.cover {
+	display: inline-block;
+	border: 1px #E6E6E6 solid;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 15px;
+	width: 345px;
+	height: 250px;
+	background-size: cover;
+}
+
+
+
+/*フッター*/
+footer {
+	width: 101.4%;
+	height:100px;
+	margin-left: -8px;
+	margin-right: -8px;
+	background-color: #ffffff;
+}
+
+.footer {
+	width: 250px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+	font-family:Verdana, Geneva, "sans-serif";
+	color: #89866C;
+	margin-left: 60px;
+	text-decoration: none;
+}
+
+footer ul {
+	float: right;
+	margin-top: 28px;
+	margin-bottom: 20px;
+	list-style: none;
+	color: #89866C;
+}
+footer ul li {
+	display: inline;
+	margin-left: 20px;
+}
+footer ul li a{
+	list-style: none;
+	font-size: 12px;
+	font-family:Verdana, Geneva, "sans-serif";
+	color: #89866C;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+
+}
+a:hover{
+	color: #E0DCC0;
+}

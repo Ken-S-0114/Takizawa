@@ -1,0 +1,14 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    #Model
+    db:
+        class: AppBundle\Model\Db
+        arguments: [ "@doctrine.orm.entity_manager"]
+    app.exception_controller:
+        class: AppBundle\Controller\CustomExceptionController
+        arguments: ['@twig', '%kernel.debug%']

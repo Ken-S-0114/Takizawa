@@ -1,0 +1,68 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LCustomer
+ *
+ * @ORM\Table(name="l_customer")
+ * @ORM\Entity
+ */
+class LCustomer
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=128, nullable=true)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="address", type="string", length=128, nullable=true)
+     */
+    private $address;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mail_address", type="string", length=128, nullable=true)
+     */
+    private $mailAddress;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tel_number", type="string", length=32, nullable=true)
+     */
+    private $telNumber;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img_url", type="string", length=512, nullable=true)
+     */
+    private $imgUrl;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="register_date", type="datetime", nullable=false)
+     */
+    private $registerDate = 'CURRENT_TIMESTAMP';
+
+
+}
+

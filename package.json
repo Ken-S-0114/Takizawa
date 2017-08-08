@@ -1,0 +1,14 @@
+{
+  "name": "waikiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "frisby": "^0.8.5"
+  }
+}

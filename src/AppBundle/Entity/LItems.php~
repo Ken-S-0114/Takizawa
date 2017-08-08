@@ -1,0 +1,89 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LItems
+ *
+ * @ORM\Table(name="l_items")
+ * @ORM\Entity
+ */
+class LItems
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="item_name", type="string", length=512, nullable=true)
+     */
+    private $itemName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="producer_id", type="integer", nullable=true)
+     */
+    private $producerId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="price", type="string", length=32, nullable=true)
+     */
+    private $price;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="context", type="text", length=65535, nullable=true)
+     */
+    private $context;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="item_img_url", type="string", length=512, nullable=true)
+     */
+    private $itemImgUrl;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="shipping_time", type="string", length=64, nullable=true)
+     */
+    private $shippingTime;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="category_id", type="integer", nullable=true)
+     */
+    private $categoryId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="sort_flg", type="integer", nullable=true)
+     */
+    private $sortFlg;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="register_date", type="datetime", nullable=false)
+     */
+    private $registerDate = 'CURRENT_TIMESTAMP';
+
+
+}
+

@@ -1,0 +1,59 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    
+top:
+    path:     /
+    defaults: { _controller: AppBundle:Top:index }
+    methods: [GET]
+
+search:
+    path:     /search
+    defaults: { _controller: AppBundle:Top:search }
+    methods: [POST]
+
+list:
+    path:     /list
+    defaults: { _controller: AppBundle:Top:list }
+    methods: [GET]
+
+category:
+    path:     /category
+    defaults: { _controller: AppBundle:Top:category }
+    methods: [GET]
+
+detail:
+    path:     /detail
+    defaults: { _controller: AppBundle:Top:detail }
+    methods: [GET]
+
+reservation:
+    path:     /reservation
+    defaults: { _controller: AppBundle:Top:reservation }
+    methods: [GET]
+
+payment:
+    path:     /payment
+    defaults: { _controller: AppBundle:Top:payment }
+    methods: [GET]
+
+payment_complete:
+    path:     /payment/complete
+    defaults: { _controller: AppBundle:Top:paymentComplete }
+    methods: [GET]
+
+contact:
+    path:     /contact
+    defaults: { _controller: AppBundle:Top:contact }
+    methods: [POST]
+
+contact_do:
+    path:     /contact/do
+    defaults: { _controller: AppBundle:Top:Do }
+    methods: [POST]
+
+guide:
+    path:     /guide
+    defaults: { _controller: AppBundle:Top:guide }
+    methods: [GET]
+
